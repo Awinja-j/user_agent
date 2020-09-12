@@ -74,6 +74,25 @@ version = "1.1.1"
 
 [[package]]
 category = "main"
+description = "Python port of Browserscope's user agent parser"
+name = "ua-parser"
+optional = false
+python-versions = "*"
+version = "0.10.0"
+
+[[package]]
+category = "main"
+description = "A library to identify devices (phones, tablets) and their capabilities by parsing browser user agent strings."
+name = "user-agents"
+optional = false
+python-versions = "*"
+version = "2.2.0"
+
+[package.dependencies]
+ua-parser = ">=0.10.0"
+
+[[package]]
+category = "main"
 description = "The comprehensive WSGI web application library."
 name = "werkzeug"
 optional = false
@@ -85,7 +104,7 @@ dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-
 watchdog = ["watchdog"]
 
 [metadata]
-content-hash = "96cf03fe8bfa8abb9fd354eae2dca21f8624f4f3ada41f0c1a562764f241416d"
+content-hash = "d981240337bf32c3ae0317bd3e3683c829dd8f4971e3f0aab0c8716d4753450b"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -143,6 +162,14 @@ markupsafe = [
     {file = "MarkupSafe-1.1.1-cp38-cp38-win32.whl", hash = "sha256:596510de112c685489095da617b5bcbbac7dd6384aeebeda4df6025d0256a81b"},
     {file = "MarkupSafe-1.1.1-cp38-cp38-win_amd64.whl", hash = "sha256:e8313f01ba26fbbe36c7be1966a7b7424942f670f38e666995b88d012765b9be"},
     {file = "MarkupSafe-1.1.1.tar.gz", hash = "sha256:29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"},
+]
+ua-parser = [
+    {file = "ua-parser-0.10.0.tar.gz", hash = "sha256:47b1782ed130d890018d983fac37c2a80799d9e0b9c532e734c67cf70f185033"},
+    {file = "ua_parser-0.10.0-py2.py3-none-any.whl", hash = "sha256:46ab2e383c01dbd2ab284991b87d624a26a08f72da4d7d413f5bfab8b9036f8a"},
+]
+user-agents = [
+    {file = "user-agents-2.2.0.tar.gz", hash = "sha256:d36d25178db65308d1458c5fa4ab39c9b2619377010130329f3955e7626ead26"},
+    {file = "user_agents-2.2.0-py3-none-any.whl", hash = "sha256:a98c4dc72ecbc64812c4534108806fb0a0b3a11ec3fd1eafe807cee5b0a942e7"},
 ]
 werkzeug = [
     {file = "Werkzeug-1.0.1-py2.py3-none-any.whl", hash = "sha256:2de2a5db0baeae7b2d2664949077c2ac63fbd16d98da0ff71837f7d1dea3fd43"},
